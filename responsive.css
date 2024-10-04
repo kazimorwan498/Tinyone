@@ -8,6 +8,7 @@
     }
     #foot-links {
         grid-template-columns: auto auto auto;
+        row-gap: 8px;
     }
 }
 
@@ -49,12 +50,6 @@
     }
     #ipad label {
         font-size: 24px;
-    }
-    #dot-scroll {
-        height: 18px;
-    }
-    #dot {
-        width: 18px;
     }
     .allFeature h3 {
         font-size: 22px;
