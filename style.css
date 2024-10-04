@@ -49,7 +49,6 @@ header {
 }
 
 #logo img {
-    filter: brightness(0);
     height: 57px;
     margin-right: 5px;
     cursor: pointer;
