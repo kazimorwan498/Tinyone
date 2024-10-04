@@ -1,0 +1,403 @@
+@media screen and (max-width: 1200px) {
+    #first-page-left-sec {
+        padding-inline-end: 30%;
+    }
+    #tinyon-feature {
+        grid-template-columns: auto auto;
+        gap: 100px;
+    }
+    #foot-links {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #ipad {
+        width: 300px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #menu a {
+        font-size: 20px;
+    }
+    #first-page-left-sec {
+        padding-inline-end: 20%;
+    }
+    #first-page h1,
+    #sec-page h2,
+    footer h2 {
+        font-size: 28px;
+    }
+    #first-page p,
+    #sec-page #feature-p,
+    footer #paragraph {
+        font-size: 15px;
+    }
+    #ipad {
+        width: 250px;
+        height: 400px;
+        border-radius: 20px;
+    }
+    #ipad::after {
+        inset: 30px 20px;
+        border-radius: 5px;
+    }
+    #ipad img {
+        height: 50px;
+    }
+    #ipad label {
+        font-size: 24px;
+    }
+    #dot-scroll {
+        height: 18px;
+    }
+    #dot {
+        width: 18px;
+    }
+    .allFeature h3 {
+        font-size: 22px;
+    }
+    .allFeature p {
+        font-size: 14px;
+    }
+    #subscribe {
+        width: 80%;
+    }
+    #social-links a {
+        width: 50px;
+        height: 50px;
+    }
+    #social-links a i {
+        font-size: 28px;
+    }
+    #address {
+        margin-top: 15%;
+    }
+    #address p,
+    #foot-links a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #first-page h1,
+    #sec-page h2,
+    footer h2 {
+        font-size: 23px;
+    }
+    #first-page-left-sec {
+        padding-inline-end: 10%;
+    }
+    #download-btn {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 5%;
+    }
+    #download-btn i {
+        font-size: 35px;
+    }
+    #ipad {
+        width: 200px;
+        height: 300px;
+    }
+    #ipad::after {
+        inset: 20px 15px;
+        border-radius: 6px;
+    }
+    #ipad img {
+        height: 40px;
+    }
+    #ipad label {
+        font-size: 20px;
+    }
+    #dot-scroll {
+        height: 15px;
+        margin-top: 5%;
+    }
+    #dot {
+        width: 15px;
+    }
+    #dot::before {
+        left: -20px;
+    }
+    #dot::after {
+        left: 20px;
+    }
+    #tinyon-feature {
+        grid-template-columns: auto;
+        gap: 70px;
+    }
+    #foot-links {
+        grid-template-columns: auto auto;
+        row-gap: 5px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #menu {
+        display: none;
+    }
+    #nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--secondary-color-low-op-2);
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);
+        margin: 30px;
+        border-radius: 15px;
+        z-index: 11111;
+        box-shadow: 0 0 20px 100px var(--third-color-low-op-2);
+    }
+    #nav a {
+        color: var(--third-color);
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: var(--transition);
+
+        &:hover {
+            color: var(--third-color-low-op);
+        }
+    }
+    #nav #close-btn {
+        position: absolute;
+        top: 3%;
+        right: 5%;
+    }
+    #menu-btn,
+    #close-btn {
+        display: flex;
+    }
+    #first-page h1,
+    #sec-page h2,
+    footer h2 {
+        font-size: 22px;
+    }
+    #first-page p,
+    #sec-page #feature-p,
+    .allFeature p,
+    footer #paragraph {
+        font-size: 13px;
+    }
+    #download-btn i {
+        font-size: 30px;
+    }
+    #ipad {
+        width: 175px;
+        height: 280px;
+    }
+    .allFeature h3 {
+        font-size: 20px;
+    }
+    .allFeature i {
+        width: 70px;
+        font-size: 45px;
+    }
+    #subscribe input,
+    #subscribe button {
+        font-size: 16px;
+    }
+    #address p,
+    #foot-links a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #subscribe {
+        width: 90%;
+    }
+    #social-links {
+        column-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        padding-inline: 7%;
+    }
+    #logo a {
+        font-size: 27px;
+    }
+    #logo img {
+        height: 50px;
+    }
+    #first-page,
+    #sec-page,
+    footer {
+        padding: 5% 7%;
+    }
+    #first-page h1,
+    #sec-page h2,
+    footer h2 {
+        font-size: 20px;
+    }
+    #first-page p,
+    #sec-page #feature-p,
+    .allFeature p,
+    footer #paragraph {
+        font-size: 10px;
+    }
+    #download-btn i {
+        font-size: 25px;
+    }
+    #ipad {
+        width: 150px;
+        height: 250px;
+        border-radius: 15px;
+    }
+    #ipad::after {
+        border-radius: 3px;
+    }
+    #ipad img {
+        height: 35px;
+    }
+    #ipad label {
+        font-size: 16px;
+    }
+    .allFeature i {
+        width: 60px;
+        font-size: 40px;
+    }
+    .allFeature h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .allFeature i {
+        font-size: 35px;
+    }
+    #subscribe {
+        height: 40px;
+    }
+    #subscribe input,
+    #subscribe button {
+        font-size: 13px;
+    }
+    #social-links a {
+        width: 45px;
+        height: 45px;
+        border-radius: 12px;
+    }
+    #social-links a i {
+        font-size: 23px;
+    }
+    #address p,
+    #foot-links a {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #first-page h1,
+    #sec-page h2,
+    footer h2 {
+        font-size: 16px;
+    }
+    #first-page p,
+    #sec-page #feature-p,
+    .allFeature p,
+    footer #paragraph {
+        font-size: 9px;
+    }
+    #ipad {
+        width: 130px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    #ipad::after {
+        inset: 15px 12px;
+    }
+    #ipad img {
+        height: 30px;
+        margin-right: 3px;
+    }
+    #ipad label {
+        font-size: 14px;
+    }
+    #dot-scroll {
+        height: 10px;
+    }
+    #dot {
+        width: 10px;
+    }
+    #dot::before {
+        left: -15px;
+    }
+    #dot::after {
+        left: 15px;
+    }
+    .allFeature h3 {
+        font-size: 14px;
+    }
+    #subscribe input,
+    #subscribe button {
+        font-size: 12px;
+    }
+    #social-links {
+        column-gap: 30px;
+    }
+    #social-links a {
+        width: 40px;
+        height: 40px;
+    }
+    #social-links a i {
+        font-size: 20px;
+    }
+    #address {
+        margin-top: 15%;
+    }
+    #address p,
+    #foot-links a {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #logo img {
+        height: 40px;
+    }
+    #logo a {
+        font-size: 20px;
+    }
+    #menu-btn span {
+        font-size: 25px;
+    }
+    #first-page h1,
+    #sec-page h2,
+    footer h2 {
+        font-size: 14px;
+    }
+    #download-btn i {
+        font-size: 20px;
+    }
+    #ipad {
+        width: 110px;
+        height: 160px;
+    }
+    #ipad img {
+        height: 25px;
+    }
+    #ipad label {
+        font-size: 10px;
+    }
+    #ipad::after {
+        inset: 12px 10px;
+    }
+    #social-links a {
+        width: 35px;
+        height: 35px;
+        border-radius: 8px;
+    }
+    #social-links a i {
+        font-size: 17px;
+    }
+}
