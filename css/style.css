@@ -1,21 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 
 :root {
-    --primary-color: #fcdb00;
-    --secondary-color: #fff;
-    --secondary-color-low-op: rgba(255, 255, 255, 0.5);
-    --secondary-color-low-op-2: rgba(255, 255, 255, 0.8);
-    --third-color: #000;
-    --third-color-low-op: rgba(0, 0, 0, 0.6);
-    --third-color-low-op-2: rgba(0, 0, 0, 0.8);
+    --primary-color: rgb(252, 219, 0);
+    --secondary-color: rgb(255, 255, 255);
+    --third-color: rgb(0, 0, 0);
     --transition: all 0.2s;
+    --scale-95: 0.95;
+    --scale-110: 1.1;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-/* All Elements Styling */
+/* Universal Elements Styling */
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +23,7 @@ html {
 
 /* Body Styling */
 body {
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
@@ -80,10 +78,11 @@ header {
     transition: var(--transition);
 
     &:hover {
-        color: var(--third-color-low-op);
+        color: rgba(from var(--third-color) r g b / 0.7);
     }
 }
 
+/* Nav for mobile */
 #nav {
     display: none;
 }
@@ -119,7 +118,7 @@ header {
 
 #first-page-left-sec {
     grid-area: first-page-left-sec;
-    padding-inline-end: 50%;
+    padding-inline-end: 15%;
 }
 
 #first-page-right-sec {
@@ -133,7 +132,7 @@ header {
 }
 
 #first-page p {
-    color: var(--third-color-low-op);
+    color: rgba(from var(--third-color) r g b / 0.7);
     letter-spacing: 1px;
     font-size: 18px;
 }
@@ -157,7 +156,11 @@ header {
     transition: var(--transition);
 
     &:hover {
-        color: var(--third-color-low-op);
+        scale: var(--scale-110);
+    }
+
+    &:active {
+        scale: var(--scale-95);
     }
 }
 
@@ -174,7 +177,7 @@ header {
     height: 550px;
     background-color: var(--secondary-color);
     border-radius: 25px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 10px rgba(from var(--third-color) r g b / 0.3);
     transition: var(--transition);
 }
 
@@ -208,7 +211,7 @@ header {
     height: 15px;
     background: transparent;
     grid-area: dot-scroll;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 #dot {
@@ -225,7 +228,7 @@ header {
     left: -25px;
     width: 100%;
     height: 100%;
-    background-color: var(--secondary-color-low-op);
+    background-color: rgba(from var(--secondary-color) r g b / 0.5);
     border-radius: 50%;
 }
 
@@ -235,7 +238,7 @@ header {
     left: 25px;
     width: 100%;
     height: 100%;
-    background-color: var(--secondary-color-low-op);
+    background-color: rgba(from var(--secondary-color) r g b / 0.5);
     border-radius: 50%;
 }
 
@@ -262,7 +265,7 @@ header {
     justify-content: center;
     text-align: center;
     font-size: 18px;
-    color: var(--third-color-low-op);
+    color: rgba(from var(--third-color) r g b / 0.7);
     margin-top: 20px;
 }
 
@@ -302,7 +305,7 @@ header {
 .allFeature p {
     text-align: left;
     font-size: 16px;
-    color: var(--third-color-low-op);
+    color: rgba(from var(--third-color) r g b / 0.7);
     text-wrap: wrap;
     grid-area: allFeature-p;
 }
@@ -364,7 +367,18 @@ footer #paragraph {
     padding-inline: 10px;
     color: var(--third-color);
     background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    transition: var(--transition);
     cursor: pointer;
+
+    &:hover {
+        color: var(--primary-color);
+        background-color: var(--third-color);
+    }
+
+    &:active {
+        scale: var(--scale-95);
+    }
 }
 
 #social-links {
@@ -388,6 +402,10 @@ footer #paragraph {
     &:hover {
         color: var(--secondary-color);
         scale: 1.1;
+    }
+
+    &:active {
+        scale: var(--scale-95);
     }
 }
 
@@ -438,7 +456,7 @@ footer #paragraph {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--secondary-color-low-op);
+    color: rgba(from var(--secondary-color) r g b / 0.5);
     font-size: 18px;
     font-weight: 600;
     transition: var(--transition);
